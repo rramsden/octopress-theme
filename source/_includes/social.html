@@ -1,0 +1,17 @@
+<ul id="social">
+	{% if site.twitter_user %}
+		<li class="twitter">
+			<a href="http://www.twitter.com/{{ site.twitter_user }}" title="@{{ site.twitter_user }} on Twitter">@{{ site.twitter_user }} on Twitter</a>
+		</li>
+	{% endif %}
+	{% if site.twitter_user %}
+		<li class="github">
+			<a href="http://www.github.com/{{ site.github_user }}" title="{{ site.github_user }} on GitHub">{{ site.github_user }} on GitHub</a>
+		</li>
+	{% endif %}
+	{% if site.googleplus_user %}
+		<li class="googleplus">
+			<a href="http://plus.google.com/{{ site.googleplus_user }}" title="{{ site.googleplus_user }} on Google Plus">{{ site.googleplus_user }} on Google Plus</a>
+		</li>
+	{% endif %}
+</ul>

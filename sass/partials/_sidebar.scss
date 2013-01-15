@@ -1,0 +1,18 @@
+#sidebar {
+  width: 300px;
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 720px;
+
+  h3.recent_posts {
+      a {
+          text-decoration: none;
+          background-position: 0 6px;
+
+          &:link { color: $color-dark; }
+          &:hover { color: $color-dark; }
+          &:active { color: $color-dark; }
+          &:visited { color: $color-dark; }
+      }
+  }
+}

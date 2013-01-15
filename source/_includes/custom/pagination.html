@@ -1,0 +1,15 @@
+<div class="pagination">
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&larr; Older</a>
+  {% elsif paginator.next_page %}
+    <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
+  {% endif %}
+
+  <a href="/blog/archives">Blog Archives</a>
+
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">Newer &rarr;</a>
+  {% elsif paginator.previous_page %}
+    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
+  {% endif %}
+</div>

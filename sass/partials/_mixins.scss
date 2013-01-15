@@ -1,0 +1,19 @@
+.underline {
+    border-bottom: 1px solid $border-color;
+    -webkit-box-shadow: #E7E7E7 0 1px;
+    -moz-box-shadow: #E7E7E7 0 1px;
+    box-shadow: #E7E7E7 0 1px;
+}
+
+.clearfix {
+  zoom:1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}

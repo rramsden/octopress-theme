@@ -1,0 +1,63 @@
+@include font-face("Lora Bold Italic",
+  font-files("Lora-BoldItalic-webfont.ttf",
+             "Lora-BoldItalic-webfont.eot",
+             "Lora-BoldItalic-webfont.svg",
+             "Lora-BoldItalic-webfont.woff"));
+
+$sans: "HelveticaNeue", Helvetica, Arial, sans-serif !default;
+$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+
+strong {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+h1, h2, h3 {
+  font-family: "Lora Bold Italic", $sans;
+  color: $color-dark;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin-top: 0px;
+}
+
+h2 {
+  margin-top: 1em;
+  margin-bottom: 0.6em;
+  font-size: 2.0em;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.6em;
+  font-size: 1.5em;
+}
+
+time {
+  font-family: "Lora Bold Italic", $sans;
+}
+
+pre, code, tt { @extend .mono; }
+
+pre {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p, ul {
+  font-family: "proxima-nova", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  margin: 25px 0 25px 0;
+}
+
+ul {
+  margin: 25px 0 25px 0;
+  list-style-type: disc;
+
+  li {
+    margin-left: 20px;
+  }
+}
